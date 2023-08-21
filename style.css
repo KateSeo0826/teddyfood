@@ -494,19 +494,24 @@ header {
 }
 .book-section {
   position: relative;
-  width: 100%;
+  height: 80vh;
   background-image: url("./assets/images/bg-image.jpg");
   background-position: center;
+  background-size: contain;
   background-size: cover;
 }
 .book-box {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.book-section::after {
+.book-box-overlay::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -514,6 +519,16 @@ header {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.book-box {
+  color: #ffffff;
+  text-align: center;
+}
+.book-box p {
+  width: 100%;
+  margin: 1rem 0 2rem;
+  font-size: 1rem;
+  text-align: center;
 }
 /* Testimonial Section Start */
 .testimonial-section {
@@ -531,16 +546,7 @@ header {
   margin: 1rem 0;
   font-size: 3rem;
 }
-.book-box {
-  color: #ffffff;
-}
-.book-box p {
-  width: 40%;
-  margin: 1rem 0 2rem;
-  font-size: 1rem;
-  text-align: center;
-  color: #ffffff;
-}
+
 .testimonial-section .container > p {
   font-family: Gilroy-Regular;
   width: 40%;
