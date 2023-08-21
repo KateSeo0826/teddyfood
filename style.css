@@ -528,7 +528,6 @@ header {
   width: 100%;
   margin: 1rem 0 2rem;
   font-size: 1rem;
-  text-align: center;
 }
 /* Testimonial Section Start */
 .testimonial-section {
@@ -546,7 +545,6 @@ header {
   margin: 1rem 0;
   font-size: 3rem;
 }
-
 .testimonial-section .container > p {
   font-family: Gilroy-Regular;
   width: 40%;
@@ -681,9 +679,9 @@ header {
   background-color: #ffffff21;
 }
 .icon-box:hover {
-  fill: #fff;
-  color: #fff;
-  border-color: #fff;
+  fill: #b28e65;
+  color: #b28e65;
+  border-color: #b28e65;
 }
 .phone-number-box,
 .email-box {
@@ -800,22 +798,6 @@ textarea {
 }
 .social-icons-box i {
   padding: 1rem;
-}
-.icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 52px;
-  height: 52px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  font-size: 24px;
-  border-radius: 50%;
-}
-.icon-box:hover {
-  fill: #fff;
-  color: #fff;
-  border-color: #1f1d16;
 }
 
 @media (min-width: 1025px) {
