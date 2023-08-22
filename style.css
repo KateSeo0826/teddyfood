@@ -385,7 +385,7 @@ header {
   text-align: center;
 }
 .wine-item img {
-  width: 100%;
+  width: 80%;
 }
 .wine-img {
   width: 100%;
@@ -815,9 +815,7 @@ textarea {
     background-attachment: fixed;
   }
   .header .header-container {
-    padding: 1rem 0;
     flex-direction: column;
-    border-bottom: 1px solid#FFFDEB;
   }
   .home .media-icons {
     right: 15px;
@@ -826,7 +824,9 @@ textarea {
     display: none;
     flex-direction: column;
     gap: 0;
-    margin: 0rem 1rem;
+    margin: 1rem 1rem;
+    right: 3rem;
+    border-bottom: 1px solid#FFFDEB;
   }
   .header-menu li {
     width: 100%;
@@ -835,12 +835,11 @@ textarea {
   .navbar-toggleBtn {
     display: block;
     top: 1rem;
-    left: 8.5rem;
+    left: 56rem;
     color: #ffffff;
   }
   .header-menu.open {
     display: flex;
-    display: column;
   }
   .main-title {
     margin-top: 4rem;
@@ -895,9 +894,15 @@ textarea {
 }
 /* Responsive 820px Start*/
 @media screen and (max-width: 820px) {
+  .navbar-toggleBtn {
+    left: 42rem;
+  }
   .header-menu-item {
     display: block;
     padding: 8px 5px;
+  }
+  .header-menu {
+    right: 1rem;
   }
   .main-image img {
     width: 100%;
@@ -1026,10 +1031,19 @@ textarea {
 /* Responsive 820px End*/
 /* Responsive 598px Start*/
 @media screen and (max-width: 598px) {
+  .home.responsive {
+    min-height: 170vh;
+  }
+  .home {
+    min-height: 100vh;
+  }
   .btn-box {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .navbar-toggleBtn {
+    left: 20rem;
   }
   .home .content h1 {
     font-size: 2.5rem;
