@@ -32,6 +32,9 @@ header {
   display: flex;
   justify-content: center;
 }
+a:visited {
+  color: white;
+}
 .home {
   position: relative;
   width: 100%;
