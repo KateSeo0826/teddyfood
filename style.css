@@ -867,6 +867,9 @@ textarea {
     background: url("./assets/images/food-menu.jpg");
     background-repeat: no-repeat;
   }
+  .content-box {
+    text-align: center;
+  }
   .order-wine-section .container {
     max-width: 1000px;
   }
