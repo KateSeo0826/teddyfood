@@ -814,6 +814,12 @@ textarea {
 }
 /*  Pub Gallery End*/
 @media screen and (max-width: 1024px) {
+  .home.responsive {
+    min-height: 100vh;
+  }
+  .home {
+    min-height: 70vh;
+  }
   .book-section {
     background-attachment: fixed;
   }
