@@ -825,7 +825,7 @@ textarea {
     flex-direction: column;
     gap: 0;
     margin: 1rem 1rem;
-    right: 3rem;
+    right: 1rem;
     border-bottom: 1px solid#FFFDEB;
   }
   .header-menu li {
