@@ -900,8 +900,16 @@ textarea {
 }
 /* Responsive 820px Start*/
 @media screen and (max-width: 820px) {
+  .bar-menu-box {
+    height: 80vh;
+    background: url("./assets/images/bar-menu.jpg");
+  }
+  .food-menu-box {
+    height: 80vh;
+    background: url("./assets/images/food-menu.jpg");
+  }
   .navbar-toggleBtn {
-    left: 42rem;
+    left: 39rem;
   }
   .header-menu-item {
     display: block;
