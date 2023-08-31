@@ -181,8 +181,6 @@ $(".book-btn").hover(
     }
 );
 
-
-
 $(document).ready(function () {
     $(".overDiv").hover(function () {
         $(this).find('.itemContentInfo').animate({ height: 310 }, 300);
