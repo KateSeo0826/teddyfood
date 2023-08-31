@@ -18,6 +18,11 @@
     <!--Font Awesome Icon CDN-->
     <link
       rel="stylesheet"
+      type="text/css"
+      href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <script
@@ -52,7 +57,7 @@
             </div>
             <!-- Site Logo End -->
             <li>
-              <a href="#wine" class="header-menu-item">WINE</a>
+              <a href="#cocktail" class="header-menu-item">COCKTAILS</a>
             </li>
             <li>
               <a href="#contact" class="header-menu-item">CONTACT US</a>
@@ -163,7 +168,7 @@
     </section>
     <!-- About Section End -->
     <!-- Menu Section Start -->
-    <section id="menu" class="menu-section">
+    <section class="menu-section">
       <div class="menu-left-box">
         <div class="bar-menu-box"></div>
         <div class="content-box">
@@ -173,8 +178,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
             eiusmod tempor
           </p>
-          <a class="main-btn" href="#">
-            <span class="menu">VIEW OUR WINES</span>
+          <a class="main-btn" href="#cocktail1">
+            <span class="menu">VIEW COCKTAILS</span>
           </a>
         </div>
       </div>
@@ -187,119 +192,125 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
             eiusmod tempor
           </p>
-          <a class="main-btn" href="#">
-            <span class="menu">VIEW OUR WINES</span>
+          <a class="main-btn" href="#menu">
+            <span class="menu">VIEW FOOD MENU</span>
           </a>
         </div>
       </div>
     </section>
-    <section class="wine-section">
+
+    <!-- Second Slider 3D Start-->
+    <section id="cocktail1" class="cocktail-section-2">
       <div class="container">
-        <div class="wine-title-box">
+        <div class="cocktail-title-box">
           <div class="divider"></div>
           <h2>
             DISCOVER <br />
-            SPECIAL WINES
+            SPECIAL COCKTAILS
           </h2>
         </div>
-        <div id="wine" class="wine-list-box">
-          <div class="wine-item">
-            <img src="./assets/images/bottle01.png" alt="wine01" />
-            <p>Fortnum's South Island Sauvignon Blanc, James Thompson, 75cl</p>
-            <div class="divider"></div>
-            <span> $29</span>
+        <!-- Second Slider 3D Start-->
+        <div id="drag-container">
+          <div id="spin-container">
+            <img src="./assets/images/cocktail_01.png" alt="cocktail01" />
+            <img src="./assets/images/cocktail_02.png" alt="cocktail02" />
+            <img src="./assets/images/cocktail_09.png" alt="cocktail03" />
+            <img src="./assets/images/cocktail_04.png" alt="cocktail04" />
+            <img src="./assets/images/cocktail_05.png" alt="cocktail05" />
+            <img src="./assets/images/cocktail_10.png" alt="cocktail06" />
+            <img src="./assets/images/cocktail_11.png" alt="cocktail07" />
+            <img src="./assets/images/cocktail_08.png" alt="cocktail08" />
           </div>
-          <div class="wine-item">
-            <img src="./assets/images/bottle02.png" alt="wine02" />
-            <p>Fortnum's South Island Sauvignon Blanc, James Thompson, 75cl</p>
-            <div class="divider"></div>
-            <span> $29</span>
-          </div>
-          <div class="wine-item">
-            <img src="./assets/images/bottle03.png" alt="wine03" />
-            <p>Fortnum's South Island Sauvignon Blanc, James Thompson, 75cl</p>
-            <div class="divider"></div>
-            <span> $29</span>
-          </div>
-          <div class="wine-item">
-            <img src="./assets/images/bottle04.png" alt="wine04" />
-            <p>Fortnum's South Island Sauvignon Blanc, James Thompson, 75cl</p>
-            <div class="divider"></div>
-            <span> $29</span>
-          </div>
+          <p>COCKTAILS</p>
+          <div id="ground"></div>
         </div>
+        <!-- Second Slider 3D Start-->
         <div class="wine-btn-box">
-          <button>ALL SPECIAL WINES</button>
+          <a href="#cocktail">
+            <button>VIEW SPECIAL COCKTAIL</button>
+          </a>
         </div>
       </div>
     </section>
-    <!-- Menu Section End -->
-    <!-- Order Wine Section Start -->
-    <section class="order-wine-section">
+
+    <!-- Food Menu Section Start -->
+    <section id="menu" class="food-menu-section">
       <div class="container">
-        <div class="wine-title-box">
+        <div class="menu-title-box">
           <div class="divider"></div>
-          <h2>
-            ORDER WINE AT <br />
-            YOUR DOORSTEP
-          </h2>
+          <h2>DISCOVER <br />SPECIAL FOOD MENU</h2>
         </div>
-        <div class="wine-list-box">
-          <div class="wine-item-2">
+        <div class="menu-list-box">
+          <div class="menu-item-2">
             <img
-              class="wine-img"
-              src="./assets/images/wine05.jpg"
-              alt="wine06"
+              class="menu-img"
+              src="./assets/images/food01.png"
+              alt="food01"
             />
-            <div class="wine-price-box">
-              <h2>WINES OF SOUTH AFRICA</h2>
-              <span> $40</span>
+            <div class="menu-price-box">
+              <h2>SMOKED MUSSELS</h2>
+              <span>$20</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.
+              It delightful with a semi-viscous sauce that incorporates Anaheim
+              pepper and fennel.
             </p>
           </div>
-          <div class="wine-item-2">
+          <div class="menu-item-2">
             <img
-              class="wine-img"
-              src="./assets/images/wine06.jpg"
-              alt="wine07"
+              class="menu-img"
+              src="./assets/images/food02.png"
+              alt="food02"
             />
-            <div class="wine-price-box">
-              <h2>WINES OF SOUTH AFRICA</h2>
-              <span> $40</span>
+            <div class="menu-price-box">
+              <h2>Squash & Romesco</h2>
+              <span>$20</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.
+              Cooked squash and pumpkin seeds goes so well with the nutty, herby
+              romesco.
             </p>
           </div>
-          <div class="wine-item-2">
+          <div class="menu-item-2">
             <img
-              class="wine-img"
-              src="./assets/images/wine07.jpg"
-              alt="wine08"
+              class="menu-img"
+              src="./assets/images/food03.png"
+              alt="food03"
             />
-            <div class="wine-price-box">
-              <h2>WINES OF SOUTH AFRICA</h2>
-              <span> $40</span>
+            <div class="menu-price-box">
+              <h2>Mushroom Tower</h2>
+              <span>$20</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.
+              A snack of skewered mushrooms stacked on thick slices of crusty
+              bread topped with shrimp
+            </p>
+          </div>
+          <div class="menu-item-2">
+            <img
+              class="menu-img"
+              src="./assets/images/food04.png"
+              alt="food04"
+            />
+            <div class="menu-price-box">
+              <h2>Iberico De Bellota</h2>
+              <span>$30</span>
+            </div>
+            <p>
+              Jamon along with other options like manchego, olives and bread
+              provide elegant tapas options.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Order Wine Section End -->
+    <!-- Food Menu Section End -->
     <!-- Pub Gallery Start-->
     <section class="gallery-section">
       <div class="about-us-gallery">
         <figure class="gallery-item gallery-item-1">
           <img
-            src="./assets/images/gallery01.jpg"
+            src="./assets/images/cocktail_bar.jpg"
             class="gallery-img"
             alt="Image 1"
           />
@@ -317,7 +328,7 @@
         </figure>
         <figure class="gallery-item gallery-item-4">
           <img
-            src="./assets/images/gallery03.jpg"
+            src="./assets/images/burger7.jpg"
             class="gallery-img"
             alt="Image 4"
           />
@@ -331,7 +342,7 @@
         </figure>
         <figure class="gallery-item gallery-item-6">
           <img
-            src="./assets/images/gallery05.jpg"
+            src="./assets/images/fries.jpg"
             class="gallery-img"
             alt="Image 5"
           />
@@ -339,6 +350,171 @@
       </div>
     </section>
     <!-- Pub Gallery Section End -->
+    <!-- First Slider 3D Start-->
+    <section id="cocktail" class="cocktail-section">
+      <div class="container">
+        <div class="cocktail-title-box">
+          <div class="divider"></div>
+          <h2>
+            DISCOVER <br />
+            SPECIAL COCKTAILS
+          </h2>
+        </div>
+        <div class="itemWrapper">
+          <div class="itemContainer">
+            <!-- item 1 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                <div class="itemContentItem">
+                  <img
+                    src="./assets/images/cocktail_bg_02.jpg"
+                    alt="cocktail01"
+                    title="Ebook"
+                  />
+                </div>
+                <div class="overDiv">
+                  <div class="itemContentTitle">
+                    <h3>Espresso Martini</h3>
+                  </div>
+                  <div class="itemContentInfo">
+                    <p>
+                      Learn how to make this classic coffee cocktail. Our easy
+                      recipe uses freshly brewed espresso, a dash of coffee
+                      liqueur and a simple sugar syrup.
+                    </p>
+                    <ul class="cocktail-ing-box">
+                      <li>Brewed Espresso Coffee(50ml)</li>
+                      <li>Coffee Liquer(50ml)</li>
+                      <li>4 Coffee Beans</li>
+                      <li>Golden Caster Sugar(100g)</li>
+                      <li>Ice</li>
+                      <li>Vodka(100ml)</li>
+                    </ul>
+                  </div>
+                  <div class="itemContentDownload">
+                    <a class="itemBtn" href="">View Recipe!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                <div class="itemContentItem">
+                  <img
+                    src="./assets/images/passionfruitl.png"
+                    alt="cocktail02"
+                    title=""
+                  />
+                </div>
+                <div class="overDiv">
+                  <div class="itemContentTitle">
+                    <h3>Passion Fruit Martini</h3>
+                  </div>
+                  <div class="itemContentInfo">
+                    <p>
+                      This easy passion fruit cocktail is bursting with zingy
+                      flavours and is perfect for celebrating with friends. Top
+                      with prosecco for a special drink.
+                    </p>
+                    <ul class="cocktail-ing-box">
+                      <li>Lime Juice(1tbsp)</li>
+                      <li>Passion Fruits(2ea)</li>
+                      <li>Passoa(30ml)</li>
+                      <li>Prosecco</li>
+                      <li>Sugar Syrup(1tbsp)</li>
+                      <li>Vanilla Vodka(60ml)</li>
+                    </ul>
+                  </div>
+                  <div class="itemContentDownload">
+                    <a class="itemBtn" href="">View Recipe!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                <div class="itemContentItem">
+                  <img
+                    src="./assets/images/pecan sour.jpg"
+                    alt="cocktail03"
+                    title="Ebook"
+                  />
+                </div>
+                <div class="overDiv">
+                  <div class="itemContentTitle">
+                    <h3>Salted Caramel Pecan Sour</h3>
+                  </div>
+                  <div class="itemContentInfo">
+                    <p>
+                      A modern version of the classic sour cocktail, this is the
+                      ultimate Christmas drink. Salted caramel and Icelandic
+                      vodka make an irresistible mix.
+                    </p>
+                    <ul class="cocktail-ing-box">
+                      <li>Chopped Pecans(100g)</li>
+                      <li>Chocolate Bitters(18 drops)</li>
+                      <li>Dehydrated Orange Slices(6ea)</li>
+                      <li>Egg White(3)</li>
+                      <li>Fresh Clementine Juice(120ml)</li>
+                      <li>Golden Caster Sugar(160g)</li>
+                      <li>Ice</li>
+                      <li>Nutmeg</li>
+                      <li>Reyka Vodka</li>
+                      <li>Sea Salt Flakes(1/2tsp)</li>
+                    </ul>
+                  </div>
+                  <div class="itemContentDownload">
+                    <a class="itemBtn" href="">View Recipe!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="item clearfix">
+              <div class="itemContent">
+                <div class="itemContentItem">
+                  <img
+                    src="./assets/images/hurricane.jpg"
+                    alt="cocktail04"
+                    title="Ebook"
+                  />
+                </div>
+                <div class="overDiv">
+                  <div class="itemContentTitle">
+                    <h3>Hurricane Cocktail</h3>
+                  </div>
+                  <div class="itemContentInfo">
+                    <p>
+                      Our tropical, rum-based hurricane cocktail is easy to make
+                      and sure to get your party started. Garnish with orange
+                      and cocktail cherries for a kitsch touch.
+                    </p>
+                    <ul class="cocktail-ing-box">
+                      <li>Cocktail Cherries(4)</li>
+                      <li>Dark Run(50ml)</li>
+                      <li>Grenadine(2tsp)</li>
+                      <li>Lemon(1ea)</li>
+                      <li>Orange Slice(2)</li>
+                      <li>Orange(1ea)</li>
+                      <li>Passion Fruit(1ea)</li>
+                      <li>Sugar Syrup(50ml)</li>
+                      <li>White Run(50ml)</li>
+                    </ul>
+                  </div>
+                  <div class="itemContentDownload">
+                    <a class="itemBtn" href="">View Recipe!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Book Section Start -->
     <section class="book-section">
       <div class="book-box-overlay"></div>
@@ -350,12 +526,20 @@
           want to celebrate an event, we are the perfect place.
         </p>
         <div class="btn-box">
-          <a href="#contact">
-            <button class="main-btn event-btn">HOST AN EVENT</button>
-          </a>
-          <a href="#contact">
-            <button class="main-btn book-btn">BOOK A TABLE</button>
-          </a>
+          <div class="btn-01">
+            <a href="#contact">
+              <button class="main-btn event-btn">HOST AN EVENT</button>
+            </a>
+          </div>
+          <div class="btn-02">
+            <button class="book-btn">
+              <div>
+                <span class="book-table-btn">BOOK A TABLE</span>
+                <a href="tel:+14372550237">Call</a>
+                <a href="sms:+14372550237">Text </a>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -363,15 +547,16 @@
     <!-- Testimonial Section Start -->
     <section class="testimonial-section">
       <div class="container">
-        <h3>TESTIMONIALS</h3>
-        <h2>Hear From Our Customers</h2>
+        <div class="divider"></div>
+        <h2>TESTIMONIALS</h2>
+        <h4>Hear From Our Customers</h4>
         <p>
           A great cheeseburger is a gastronomical event with so many varieties
           you couldn’t get tired of it if you tried.
         </p>
       </div>
       <div id="list" class="card-container">
-        <div class="item testimonial-card bounce">
+        <div class="testimonial-card bounce">
           <div class="testimonial">
             <p>
               Really cool and lively wine bar in Kensington Market. Extensive
@@ -392,7 +577,7 @@
             alt="testimonial1"
           />
         </div>
-        <div class="item testimonial-card bounce2">
+        <div class="testimonial-card bounce2">
           <div class="testimonial">
             <p>
               This place is fantastic! The ambiance is so nice. The food is
@@ -520,5 +705,7 @@
       </div>
     </footer>
     <!-- Footer Section End -->
+    <!-- Jquery JS Link -->
+    <script src="./assets/js/jquery.min.js"></script>
   </body>
 </html>
