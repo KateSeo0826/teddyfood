@@ -183,10 +183,10 @@ $(".book-btn").hover(
 
 $(document).ready(function () {
     $(".overDiv").hover(function () {
-        $(this).find('.itemContentInfo').animate({ height: 310 }, 300);
-        $(this).find('.itemContentTitle').addClass('itemContentTitleHover');
+        $(this).find('.item-content-info').animate({ height: 310 }, 300);
+        $(this).find('.item-content-title').addClass('item-content-title-hover');
     }, function () {
-        $(this).find('.itemContentInfo').animate({ height: 0 }, 300);
-        $(this).find('.itemContentTitle').removeClass('itemContentTitleHover');
+        $(this).find('.item-content-info').animate({ height: 0 }, 300);
+        $(this).find('.item-content-title').removeClass('item-content-title-hover');
     });
 });   

@@ -579,46 +579,43 @@ a:visited {
 
 /* Card Cocktail */
 .clearfix::after {
-  content: “”;
+  content: "";
   clear: both;
   display: table;
 }
-h3 {
+.overDiv h3 {
   font-size: 1.5rem;
   padding: 25px 0 25px 0;
   text-align: center;
 }
-/* The Wrapper and container*/
-.itemWrapper {
+.cocktail-item-wrapper {
   width: 100%;
   margin: 0 auto;
 }
-.itemContainer {
+.cocktail-items-container {
   max-width: 1280px;
   margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.item {
+.cocktail-item {
   width: 25%;
   margin-bottom: 60px;
   padding: 16px;
 }
-/* Here is the item box css */
-.itemContent {
+.cocktail-item-content {
   width: 100%;
   border-radius: 3px;
   border: 1px solid #b28e65;
   height: 480px;
   position: relative;
 }
-/* item or image container */
-.itemContentItem {
+.content-item {
   text-align: center;
   padding: 1rem;
 }
-.itemContentItem img {
+.content-item img {
   max-width: 200px;
   height: 280px;
   object-fit: cover;
@@ -628,8 +625,7 @@ h3 {
   position: absolute;
   bottom: 0;
 }
-/* item description */
-.itemContentTitle {
+.item-content-title {
   background-color: rgba(237, 237, 237, 0.9);
   position: relative;
   width: 100%;
@@ -638,11 +634,11 @@ h3 {
   color: #404040;
   height: 100px;
 }
-.itemContentTitleHover {
+.item-content-title-hover {
   color: #fff !important;
   background-color: rgba(247, 128, 49, 0.9) !important;
 }
-.itemContentTitle::before {
+.item-content-title::before {
   content: "\f02e";
   font-family: FontAwesome;
   font-style: normal;
@@ -664,11 +660,11 @@ h3 {
   top: -16px;
   margin: auto;
 }
-.itemContentTitle h2 {
+.item-content-title h2 {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
 }
-.itemContentInfo {
+.item-content-info {
   position: relative;
   background-color: transparent;
   background-image: radial-gradient(
@@ -688,23 +684,23 @@ h3 {
   list-style: disc;
   padding: 0.25rem 0;
 }
-.itemContentInfo p {
+.item-content-info p {
   font-size: 0.9em;
   line-height: 1.6em;
   margin-bottom: 1.5em;
   color: #797979;
   padding: 10px 15px;
 }
-.itemContentDownload {
+.item-btn-box {
   background-color: rgba(237, 237, 237, 0.9);
   text-align: center;
   padding: 10px 15px;
   height: 66px;
 }
-.itemContentDownload a {
+.item-btn-box a {
   color: #f78031;
 }
-.itemBtn {
+.item-btn {
   padding: 10px 30px;
   display: inline-block;
   border: 1px solid #b28e65;
@@ -712,7 +708,7 @@ h3 {
   background-color: #fff;
   color: #f78031;
 }
-.itemBtn:hover {
+.item-btn:hover {
   color: #fff;
   background-color: #f78031;
   text-decoration: none;
@@ -1249,7 +1245,7 @@ textarea {
   .contact-form input {
     width: 520px;
   }
-  .item {
+  .cocktail-item {
     width: 50%;
     margin-bottom: 15px;
     padding: 0 10px;
@@ -1370,7 +1366,7 @@ textarea {
     max-width: 820px;
     height: 300px;
   }
-  .itemContainer {
+  .cocktail-items-container {
     flex-direction: column;
   }
   .feature-container {
@@ -1484,10 +1480,10 @@ textarea {
   .main-btn {
     margin: 0 0 0.5rem;
   }
-  .itemContainer {
+  .cocktail-items-container {
     max-width: 500px;
   }
-  .item {
+  .cocktail-item {
     width: 90%;
     padding: 0 10px;
     float: none;
