@@ -1,18 +1,9 @@
 //Navbar menu click 
 const navbarMenu = document.querySelector('.header-menu')
 const toggleBtn = document.querySelector('.navbar-toggleBtn')
-const home = document.querySelector('.home')
 
 toggleBtn.addEventListener('click', () => {
-
-    let toggle = navbarMenu.classList.toggle('open')
-    if (toggle) {
-        home.className += " responsive";
-        // home.classList.toggle('responsive')
-    }
-    else {
-        home.className += "home";
-    }
+    navbarMenu.classList.toggle('open')
 });
 
 navbarMenu.addEventListener('click', () => {
