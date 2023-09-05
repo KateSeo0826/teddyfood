@@ -1,3 +1,32 @@
+/*==========Fonts CSS Start==========*/
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: local("Gilroy-Heavy"),
+    url("./assets/fonts/Gilroy-Heavy.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"),
+    url("./assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"),
+    url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"),
+    url("./assets/fonts/Gilroy-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 :root {
   --navbar-width: 300px;
   --color-light: #fff;
@@ -10,7 +39,7 @@
   padding: 0;
 }
 body {
-  font-family: "Super Funtime", sans-serif;
+  font-family: Gilroy-Regular;
 }
 li,
 ul,
@@ -170,6 +199,7 @@ a:visited {
   font-size: 1rem;
   padding: 2rem;
   gap: 1.5rem;
+  font-family: Gilroy-Bold;
 }
 .header-menu-item {
   display: block;
@@ -526,15 +556,6 @@ a:visited {
 .cocktail-item {
   position: relative;
 }
-/* .cocktail-name {
-  width: 230px;
-  height: 70px;
-  padding: 1rem;
-  background-color: #fcb900;
-  position: absolute;
-  display: block;
-  bottom: 32%;
-} */
 .cocktail-item p,
 .menu-item-2 p {
   padding: 1.5rem;
@@ -1159,110 +1180,14 @@ textarea {
 .social-icons-box i {
   padding: 1rem;
 }
-
+/* Footer Section End */
+/* Responsive 1025px*/
 @media screen and (min-width: 1025px) {
   .book-section {
     background-attachment: fixed;
   }
 }
-/* @media screen and (max-width: 1366px) {
-  .bar-menu-box {
-    height: 50vh;
-  }
-  .food-menu-box {
-    height: 50vh;
-  }
-} */
-/* @media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: portrait) { */
-/* .home.responsive {
-    min-height: 75vh;
-  }
-  .home {
-    min-height: 52vh;
-  }
-  .book-section {
-    height: 60vh;
-    background-attachment: fixed;
-  }
-  .header .header-container {
-    flex-direction: column;
-  }
-  .home .media-icons {
-    right: 15px;
-  }
-  .header-menu {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    margin: 1rem 1rem;
-    right: 1rem;
-    border-bottom: 1px solid#FFFDEB;
-  }
-  .header-menu li {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar-toggleBtn {
-    display: block;
-    top: 1rem;
-    left: 56rem;
-    color: #ffffff;
-  }
-  .header-menu.open {
-    display: flex;
-  }
-  .main-title {
-    margin-top: 4rem;
-  }
-  .main-title h1 {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 4rem;
-  }
-  .main-title p {
-    width: 80%;
-    padding: 1.5rem;
-  }
-  .main-title span {
-    padding: 1rem;
-    margin-left: 1rem;
-  }
-  .bar-menu-box {
-    height: 34vh;
-  }
-  .food-menu-box {
-    height: 34vh;
-  }
-  .cocktail-3d-section .container {
-    height: 60vh;
-  }
-  .gallery-item-2 {
-    font-size: 2rem;
-  }
-  .contact-section .container {
-    max-width: 1000px;
-  }
-  .contact-box-1,
-  .contact-box-2,
-  .card-container {
-    padding: 0 1rem;
-  }
-  .contact-form input {
-    max-width: 500px;
-  }
-  .cocktail-item {
-    width: 50%;
-    margin-bottom: 15px;
-    padding: 0 10px;
-    float: left;
-  }
-  .menu-img {
-    max-width: 210px;
-  }
-  .footer-container {
-    margin: 0 1rem;
-  } */
-/* } */
+/* Responsive 1280px*/
 @media screen and (max-width: 1280px) {
   .bar-menu-box,
   .food-menu-box {
@@ -1275,6 +1200,7 @@ textarea {
     margin: 0 1rem;
   }
 }
+/* Responsive 1024px*/
 @media screen and (max-width: 1024px) {
   .header-menu {
     display: none;
@@ -1341,7 +1267,7 @@ textarea {
     margin: 0 1rem;
   }
 }
-/* Responsive 932px Start*/
+/* Responsive 932px*/
 @media screen and (max-width: 932px) {
   .navbar-toggleBtn {
     left: 43.5rem;
@@ -1494,11 +1420,13 @@ textarea {
     align-items: center;
   }
 }
+/* Responsive 892px*/
 @media screen and (max-width: 892px) {
   .navbar-toggleBtn {
     left: 43.5rem;
   }
 }
+/* Responsive 720px*/
 @media screen and (max-width: 720px) {
   .btn-box {
     display: flex;
@@ -1612,17 +1540,19 @@ textarea {
     margin: 4rem auto;
   }
 }
+/* Responsive 598px*/
 @media screen and (max-width: 598px) {
   .navbar-toggleBtn {
     left: 28rem;
   }
 }
+/* Responsive 430px*/
 @media screen and (max-width: 430px) {
   .navbar-toggleBtn {
     left: 22rem;
   }
 }
-/* Responsive 360px*/
+/* Responsive 393px*/
 @media screen and (max-width: 393px) {
   .navbar-toggleBtn {
     left: 18rem;
@@ -1635,7 +1565,7 @@ textarea {
     min-height: 293px;
   }
 }
-
+/* Responsive 280px*/
 @media screen and (max-width: 280px) {
   .navbar-toggleBtn {
     left: 15rem;
