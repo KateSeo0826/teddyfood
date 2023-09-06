@@ -1549,13 +1549,13 @@ textarea {
 /* Responsive 430px*/
 @media screen and (max-width: 430px) {
   .navbar-toggleBtn {
-    left: 22rem;
+    left: 23rem;
   }
 }
 /* Responsive 393px*/
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 394px) {
   .navbar-toggleBtn {
-    left: 18rem;
+    left: 21rem;
   }
   .home .media-icons {
     right: 4px;
@@ -1563,6 +1563,11 @@ textarea {
   .bar-menu-box,
   .food-menu-box {
     min-height: 293px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar-toggleBtn {
+    left: 18rem;
   }
 }
 /* Responsive 280px*/
