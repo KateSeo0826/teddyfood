@@ -35,6 +35,7 @@ btns.forEach((btn, i) => {
     })
 });
 
+
 $(".overDiv").hover(
     function () {
         $(this).find('.item-content-info').animate({ height: 310 }, 300);
