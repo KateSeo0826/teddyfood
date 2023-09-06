@@ -35,6 +35,16 @@ btns.forEach((btn, i) => {
     })
 });
 
+$(".overDiv").hover(
+    function () {
+        $(this).find('.item-content-info').animate({ height: 310 }, 300);
+        $(this).find('.item-content-title').addClass('item-content-title-hover');
+    }, function () {
+        $(this).find('.item-content-info').animate({ height: 0 }, 300);
+        $(this).find('.item-content-title').removeClass('item-content-title-hover');
+    }
+);
+
 // Cocktail Section 
 let radius = 240;
 let autoRotate = true;
@@ -117,11 +127,9 @@ if (autoRotate) {
 
 document.onpointerdown = function (e) {
     clearInterval(odrag.timer)
-    e = e || window.event;
-    sX = e.clientX;
-    sY = e.clientY;
+    let sX = e.clientX;
+    let sY = e.clientY;
     this.onpointermove = function (e) {
-        e = e || window.event;
         nX = e.clientX;
         nY = e.clientY;
         desX = nX - sX;
@@ -172,14 +180,3 @@ $(".book-btn").hover(
     }
 );
 
-// $(document).ready(function () {
-$(".overDiv").hover(
-    function () {
-        $(this).find('.item-content-info').animate({ height: 310 }, 300);
-        $(this).find('.item-content-title').addClass('item-content-title-hover');
-    }, function () {
-        $(this).find('.item-content-info').animate({ height: 0 }, 300);
-        $(this).find('.item-content-title').removeClass('item-content-title-hover');
-    }
-);
-// });   
