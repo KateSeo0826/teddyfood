@@ -1592,3 +1592,23 @@ textarea {
     max-width: 260px;
   }
 }
+@media (hover: hover) {
+  .book-btn:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .book-btn:hover {
+    -webkit-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+    -moz-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+    box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  .book-btn a:hover {
+    color: #000;
+  }
+  .item-content-title-hover {
+    color: #fff !important;
+    background-color: rgba(247, 128, 49, 0.9) !important;
+  }
+}
