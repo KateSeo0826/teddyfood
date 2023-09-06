@@ -1180,6 +1180,77 @@ textarea {
 .social-icons-box i {
   padding: 1rem;
 }
+
+.card {
+  background-image: url(./assets/images/pecan\ sour.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  /* max-width: ; */
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background-color: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 100)
+  );
+  transition-delay: 500ms;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+  transform: scale(1);
+}
+
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card-title {
+  position: relative;
+  max-width: 100%;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  background-color: pink;
+  width: calc(100% + var(--padding));
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.card-body {
+  color: rgb(255 255 255 / 0.85);
+}
+.button {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  background-color: pink;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+.button:hover,
+.button:focus {
+  background-color: black;
+  color: white;
+}
+
 /* Footer Section End */
 /* Responsive 1025px*/
 @media screen and (min-width: 1025px) {
@@ -1592,23 +1663,25 @@ textarea {
     max-width: 260px;
   }
 }
-@media (hover: hover) {
-  .book-btn:hover::before {
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+  .card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+  .card:hover .card-content > *:not(.card-title),
+  .card:focus-within .card-content > *:not(.card-title) {
     opacity: 1;
-    transform: scale(1, 1);
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    transition-delay: 1000ms;
   }
-  .book-btn:hover {
-    -webkit-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
-    -moz-box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
-    box-shadow: 5px 5px 30px 0px rgba(251, 122, 120, 0.35);
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-  }
-  .book-btn a:hover {
-    color: #000;
-  }
-  .item-content-title-hover {
-    color: #fff !important;
-    background-color: rgba(247, 128, 49, 0.9) !important;
+  .card-title::after {
+    transform: scaleX(0);
   }
 }
