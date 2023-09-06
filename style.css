@@ -1658,7 +1658,7 @@ textarea {
     max-width: 260px;
   }
 }
-@media (hover) {
+@media (hover: hover) {
   .card-content {
     transform: translateY(65%);
     transition: transform 500ms ease;
