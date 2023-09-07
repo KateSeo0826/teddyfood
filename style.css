@@ -655,7 +655,7 @@ a:visited {
   color: #404040;
   height: 100px;
 }
-.item-content-title-hover {
+.item-content-title.hover {
   color: #fff !important;
   background-color: rgba(247, 128, 49, 0.9) !important;
 }
@@ -697,6 +697,11 @@ a:visited {
   color: #404040;
   overflow: hidden;
   height: 0px;
+  transition: height 500ms;
+}
+.item-content-info.animate {
+  height: 310px;
+  transition: height 500ms;
 }
 .cocktail-ing-box {
   padding: 10px 1.75rem;

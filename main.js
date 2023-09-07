@@ -35,6 +35,17 @@ btns.forEach((btn, i) => {
     })
 });
 
+// Cocktail Section Button Toggle
+const itemBtns = document.querySelectorAll('.item-btn');
+const infos = document.querySelectorAll('.item-content-info');
+const titles = document.querySelectorAll('.item-content-title');
+itemBtns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        infos[i].classList.toggle('animate');
+        titles[i].classList.toggle('hover');
+    })
+})
+
 // Login button hover effect
 $(".book-btn").hover(
     function () {
@@ -48,16 +59,6 @@ $(".book-btn").hover(
             marginTop: "0px",
             opacity: '1'
         }, 500);
-    }
-);
-
-$(".overDiv").hover(
-    function () {
-        $(this).find('.item-content-info').animate({ height: 310 }, 300);
-        $(this).find('.item-content-title').addClass('item-content-title-hover');
-    }, function () {
-        $(this).find('.item-content-info').animate({ height: 0 }, 300);
-        $(this).find('.item-content-title').removeClass('item-content-title-hover');
     }
 );
 
