@@ -35,6 +35,21 @@ btns.forEach((btn, i) => {
     })
 });
 
+// Login button hover effect
+$(".book-btn").hover(
+    function () {
+        $(this).find('span').animate({
+            marginTop: "-20px",
+            opacity: '0'
+        }, 500);
+    },
+    function () {
+        $(this).find('span').animate({
+            marginTop: "0px",
+            opacity: '1'
+        }, 500);
+    }
+);
 
 $(".overDiv").hover(
     function () {
@@ -47,11 +62,11 @@ $(".overDiv").hover(
 );
 
 // Cocktail Section 
-let radius = 240;
+let radius = 190;
 let autoRotate = true;
 let rotateSpeed = -60;
-let imgWidth = 120;
-let imgHeight = 170;
+let imgWidth = 130;
+let imgHeight = 180;
 
 // Start
 setTimeout(init, 1000);
@@ -92,41 +107,8 @@ if (autoRotate) {
     ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 }
 
-
-// odrag.onpointerdown = (e) => {
-//     clearInterval(odrag.timer)
-//     sX = e.clientX;
-//     sY = e.clientY;
-//     odrag.onpointermove = (e) => {
-//         nX = e.clientX;
-//         nY = e.clientY;
-//         desX = nX - sX;
-//         desY = nY - sY;
-//         tX += desX * 0.1;
-//         tY += desY * 0.1;
-//         applyTransform(odrag);
-//         sX = nX;
-//         sY = nY;
-//     }
-//     odrag.onpointerup = (e) => {
-//         odrag.timer = setInterval(function () {
-//             desX *= 0.95;
-//             desY *= 0.95;
-//             tX += desX * 0.1;
-//             tY += desY * 0.1;
-//             applyTransform(odrag);
-//             playSpin(false);
-//             if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-//                 clearInterval(odrag.timer)
-//                 playSpin(true)
-//             }
-//         }, 17);
-//         onpointermove = onpointerup = null;
-//     };
-//     return false;
-// }
-
-document.onpointerdown = function (e) {
+const cocktail3dSection = document.querySelector('.cocktail-3d-section')
+cocktail3dSection.onpointerdown = function (e) {
     clearInterval(odrag.timer)
     let sX = e.clientX;
     let sY = e.clientY;
@@ -164,20 +146,4 @@ addEventListener("mousewheel", (e) => {
     radius += d;
     init(1);
 })
-
-// Login button hover effect
-$(".book-btn").hover(
-    function () {
-        $(this).find('span').animate({
-            marginTop: "-20px",
-            opacity: '0'
-        }, 500);
-    },
-    function () {
-        $(this).find('span').animate({
-            marginTop: "0px",
-            opacity: '1'
-        }, 500);
-    }
-);
 
