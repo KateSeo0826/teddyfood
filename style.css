@@ -1519,6 +1519,10 @@ textarea {
     font-size: 0.75rem;
     line-height: 1;
   }
+  .item-content-info p {
+    line-height: 1em;
+    margin-bottom: 0.5em;
+  }
   .cocktail-title-box h2,
   .menu-title-box h2,
   .testimonial-section .container h2 {
