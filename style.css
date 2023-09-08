@@ -875,6 +875,16 @@ a:visited {
   transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
   transform: scale(0.2, 1);
 }
+.book-table-btn.open {
+  margin-top: -20px;
+  opacity: 0;
+  animation: margin-top 500ms;
+}
+.book-table-btn {
+  margin-top: 0;
+  opacity: 1;
+  animation: margin-top 500ms;
+}
 .book-btn:hover::before {
   opacity: 1;
   transform: scale(1, 1);

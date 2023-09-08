@@ -46,21 +46,27 @@ itemBtns.forEach((btn, i) => {
     })
 })
 
+const bookbtn = document.querySelector('.book-btn');
+const tableBtn = document.querySelector('.book-table-btn');
+bookbtn.addEventListener('click', () => {
+    tableBtn.classList.toggle('open');
+})
+
 // Login button hover effect
-$(".book-btn").hover(
-    function () {
-        $(this).find('span').animate({
-            marginTop: "-20px",
-            opacity: '0'
-        }, 500);
-    },
-    function () {
-        $(this).find('span').animate({
-            marginTop: "0px",
-            opacity: '1'
-        }, 500);
-    }
-);
+// $(".book-btn").hover(
+//     function () {
+//         $(this).find('span').animate({
+//             marginTop: "-20px",
+//             opacity: '0'
+//         }, 500);
+//     },
+//     function () {
+//         $(this).find('span').animate({
+//             marginTop: "0px",
+//             opacity: '1'
+//         }, 500);
+//     }
+// );
 
 // Cocktail Section 
 let radius = 190;
