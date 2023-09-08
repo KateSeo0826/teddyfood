@@ -77,7 +77,7 @@ if(empty($email) || empty($phone) || empty($name) || empty($message)) {
         sendMail($subject, $messageBody, $altBody, $addAddress, $responseMessage);
 
         // Send email to User
-        $companyName = "Spicy Rice Inc.";
+        $companyName = "Teddy Food Inc.";
         $site_url = "https://www.adsologist.com";
         $site_phone = "+1 437 255 0237";
         $subject_To = "Thank you for enquiring with us, one of our experts will be in touch with you as soon as possible.";
@@ -94,12 +94,12 @@ if(empty($email) || empty($phone) || empty($name) || empty($message)) {
                                 <tr> <td>&nbsp;</td> </tr>
                                 <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px;">We wanted to reach out and thank you for taking the time to fill out our contact form on our website. Your inquiry is important to us and we appreciate the opportunity to connect with you.</td> </tr>
                                 <tr> <td>&nbsp;</td> </tr>
-                                <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px;">At Hakuna Madada, we are dedicated to providing top-notch service and support to all of our clients. Our team is working hard to review your request and will get back to you as soon as possible with the information you need.</td> </tr>
+                                <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px;">At Teddy Food, we are dedicated to providing top-notch service and support to all of our clients. Our team is working hard to review your request and will get back to you as soon as possible with the information you need.</td> </tr>
                                 <tr> <td>&nbsp;</td> </tr>
                                 <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px;">If you have any additional questions or concerns, please don\'t hesitate to reach out to us. <br />We are here to help!</td> </tr>
                                 <tr> <td>&nbsp;</td> </tr>
                                 <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px;">Best regards,</td> </tr>                                                                
-                                <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; font-weight: bold;">The Hakuna Madada Team.</td> </tr>                            
+                                <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; font-weight: bold;">The Teddy Food Team.</td> </tr>                            
                                 <tr> <td>&nbsp;</td> </tr>
                                 <tr> <td>&nbsp;</td> </tr>
                                 <tr> <td align="center" valign="middle" style="color: #262626; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">If you need help or have any questions, please visit <a href="https://kateseo0826.github.io/hakunamadada/contact.html" style="color:#0094aa;">https://kateseo0826.github.io/hakunamadada/contact</a><br /> Or you can reach it at '.$site_phone.'.</td> </tr>                            
@@ -145,7 +145,7 @@ function cutString($string, $length) {
 
 // Function to send email using PHPMailer
 function sendMail($subject, $messageBody, $altBody, $addAddress, $responseMessage = Null) {
-    $company = "Spicy Rice Inc.";
+    $company = "Teddy Food Inc.";
     $MessageFaultText = "Your message could not be sent. Please try again later.";
 
     // Create a new PHPMailer instance; passing 'true' enables exceptions
