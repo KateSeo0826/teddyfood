@@ -1515,7 +1515,9 @@ textarea {
     font-size: 1.5rem;
   }
   .cocktail-ing-box {
+    padding: 0 1.75rem;
     font-size: 0.75rem;
+    line-height: 1;
   }
   .cocktail-title-box h2,
   .menu-title-box h2,
