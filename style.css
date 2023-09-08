@@ -130,7 +130,7 @@ a:visited {
 }
 .home .media-icons a {
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.5em;
   transition: 0.3s ease;
 }
 .home .media-icons a:not(:last-child) {
@@ -712,8 +712,8 @@ a:visited {
 }
 .item-content-info p {
   font-size: 0.9em;
-  line-height: 1.6em;
-  margin-bottom: 1.5em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
   color: #797979;
   padding: 10px 15px;
 }
@@ -1503,6 +1503,9 @@ textarea {
   }
   .cocktail-title-box {
     font-size: 1.5rem;
+  }
+  .cocktail-ing-box {
+    font-size: 0.75rem;
   }
   .cocktail-title-box h2,
   .menu-title-box h2,
